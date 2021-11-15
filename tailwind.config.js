@@ -3,7 +3,14 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'visibility': 'transition visibility 0.3s linear,opacity 0.3s linear',
+       }
+    },
+    fontFamily: {
+      body:["Roboto", "Condensed"]
+    }
   },
   variants: {
     extend: {},
